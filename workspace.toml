@@ -1,0 +1,7 @@
+[workspace]
+theme = "loose"
+
+[workspace.structure]
+bases = "bases"
+components = "components"
+projects = "projects"

@@ -1,0 +1,20 @@
+[project]
+name = "my-polylith-template"
+version = "0.1.0"
+description = "A generic Golden Path repository template for a Python Polylith project managed by uv."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.workspace]
+members = ["projects/*", "development"]
+
+[tool.hatch.build]
+dev-mode-dirs = ["components", "bases", "development", "."]
+
+[tool.hatch.build.targets.wheel]
+packages = []

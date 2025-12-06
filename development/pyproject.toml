@@ -1,0 +1,16 @@
+[project]
+name = "development"
+version = "0.1.0"
+description = "Development support project"
+dependencies = [
+    "polylith-cli",
+    "pytest",
+    "ruff",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = []
